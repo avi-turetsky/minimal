@@ -38,6 +38,7 @@ setopt nopromptbang prompt{cr,percent,sp,subst}
 
 zstyle ':zim:prompt-pwd:tail' length 2
 zstyle ':zim:prompt-pwd:separator' format '%f/%F{244}'
+zstyle ':zim:prompt-pwd' git-root yes
 
 typeset -gA git_info
 if (( ${+functions[git-info]} )); then
