@@ -53,4 +53,4 @@ if (( ${+functions[git-info]} )); then
 fi
 
 PS1=$'%F{244}$(prompt-pwd)${(e)git_info[rprompt]}%f ${SSH_TTY:+"%m "}${VIRTUAL_ENV:+"${${VIRTUAL_ENV:t}%%.*} "}%(1j.%{\E[${MNML_BGJOB_MODE}m%}.)%F{%(?.${MNML_OK_COLOR}.${MNML_ERR_COLOR})}%(!.#.${MNML_USER_CHAR})%{\E[0m%} $(_prompt_mnml_keymap) '
-RPS1='%F{244}$(prompt-pwd)${(e)git_info[rprompt]}%f'
+unset RPS1
